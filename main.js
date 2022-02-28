@@ -39,6 +39,18 @@ function init() {
                 isStatic: true,
             }
         ),
+        Bodies.rectangle(-50, window.innerHeight / 2, 100, window.innerHeight, {
+            isStatic: true,
+        }),
+        Bodies.rectangle(
+            window.innerWidth + 50,
+            window.innerHeight / 2,
+            100,
+            window.innerHeight,
+            {
+                isStatic: true,
+            }
+        ),
     ])
 
     Render.run(render)
