@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="cs">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Kočtlačítko</title>
-    </head>
-    <body class="">
-        <div id="app" class="flex items-center justify-center min-h-screen">
-            <div>
-                <img src="./cat.svg" alt="Kočka" class="relative z-10 h-24 -mb-3">
-                <button type="button" class="outline-none active:shadow-none active:duration-75 active:pb-1.5 bg-red-700 text-white text-xl font-bold px-3 pt-1.5 pb-2 rounded shadow-bottom">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kočtlačítko</title>
+</head>
+
+<body class="">
+    <div id="app" class="relative h-screen">
+        <div class="absolute z-10 transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            <button type="button" id="btn" class="inset-auto z-10 flex flex-col w-full mx-auto outline-none active:duration-75 active:mt-1.5">
+                <img src="./cat.svg" alt="Kočka" class="relative z-10 w-24 h-24 -mb-3">
+                <span
+                    class="active:shadow-none active:pb-1.5 bg-red-700 text-white text-xl font-bold px-3 pt-1.5 pb-2 rounded shadow-bottom w-48">
                     Chci víc kočiček
-                </button>
-            </div>
+                </span>
+            </button>
         </div>
-        <script type="module" src="/main.js"></script>
-    </body>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
 </html>
